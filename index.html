@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo do Galo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Jogo do Galo</h1>
+
+    <div class="modes" role="group" aria-label="Modo de jogo">
+      <button class="mode active" data-mode="pvp">2 Jogadores</button>
+      <button class="mode" data-mode="ai">Contra o computador</button>
+    </div>
+
+    <p id="status" aria-live="polite">Vez do X</p>
+
+    <div id="board" role="grid" aria-label="Tabuleiro"></div>
+
+    <div class="score">
+      <div><span class="x">X</span><strong id="score-x">0</strong></div>
+      <div><span>Empates</span><strong id="score-draw">0</strong></div>
+      <div><span class="o">O</span><strong id="score-o">0</strong></div>
+    </div>
+
+    <div class="actions">
+      <button id="restart">Novo jogo</button>
+      <button id="reset-score" class="secondary">Repor pontuação</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
